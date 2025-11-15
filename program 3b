@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class Employee {
+float basic, ta, da, gross;
+public:
+void getData() {
+cout << "Enter Basic Salary: ";
+cin >> basic;
+ta = 0.15 * basic;
+da = 0.30 * basic;
+gross = basic + ta + da;
+}
+void display() {
+cout << "Gross Salary: " << gross << endl;
+}
+};
+int main() {
+Employee e;
+e.getData();
+e.display();
+return 0;
+}
