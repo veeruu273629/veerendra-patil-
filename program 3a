@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class Student {
+string name;
+int roll;
+string prn;
+
+public:
+void getData() {
+cout << "Enter Name, Roll No, PRN: ";
+cin >> name >> roll >> prn;
+}
+void display() {
+cout << "Name: " << name << "\nRoll: " << roll << "\nPRN: " << prn <<
+endl;
+}
+};
+int main() {
+Student s;
+s.getData();
+s.display();
+return 0;
+}
