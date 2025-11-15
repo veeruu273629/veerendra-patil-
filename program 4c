@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class Numbers {
+public:
+friend void findSum();
+};
+void findSum() {
+int sum=0, count=0;
+for(int i=100;i<=200;i++) {
+if(i%9==0) {
+sum+=i;
+count++;
+}
+}
+
+cout << "Count: " << count << "\nSum: " << sum << endl;
+}
+int main() {
+findSum();
+return 0;
+}
