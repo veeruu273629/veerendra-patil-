@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+float percentage;
+cout << "Enter percentage: ";
+cin >> percentage;
+if (percentage >= 75)
+cout << "Grade: Distinction";
+else if (percentage >= 60)
+cout << "Grade: First Class";
+else if (percentage >= 50)
+cout << "Grade: Second Class";
+else if (percentage >= 35)
+cout << "Grade: Pass";
+else
+cout << "Grade: Fail";
+return 0;
+}
